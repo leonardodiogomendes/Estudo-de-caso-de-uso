@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Carros Velha Guarda</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!-- Brand -->
+                <a class="navbar-brand" href="Tela inicial.html">Carros Velha Guarda</a>
+
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pesquisa.html">Carros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Agendamento de manutenção.html">Agendamento de manutenção</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Acessar
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="acesso.html">Usuário</a>
+                            <a class="dropdown-item" href="Cadastro.html">Cadastrar</a>
+                            <a class="dropdown-item" href="esqueciminhasenha.html">Esqueci minha senha</a>
+                        </div>
+                        <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Relatórios
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="relatorioscarros.html">Carros</a>
+                            <a class="dropdown-item" href="relatoriovendas.html">vendas</a>
+                            <a class="dropdown-item" href="relatoriousuario.html">Usuários</a>
+                        </div>    
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="form-horizontal">
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <legend>Cadastro</legend>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="Nome completo">Nome completo:</label>  
+                        <div class="col-md-4">
+                            <input id="Nome completo" name="Nome completo" type="text" placeholder="" class="form-control input-md" required="">
+                            <span class="help-block">Digite seu nome</span>  
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="CPF">CPF</label>  
+                        <div class="col-md-4">
+                            <input id="CPF" name="CPF" type="text" placeholder="" class="form-control input-md" required="">
+                            <span class="help-block">Informe seu COF</span>  
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="Email">Email:</label>  
+                        <div class="col-md-4">
+                            <input id="Email" name="Email" type="text" placeholder="" class="form-control input-md" required="">
+                            <span class="help-block">Digite seu email</span>  
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="Telefone">Telefone:</label>  
+                        <div class="col-md-4">
+                            <input id="Email" name="Email" type="text" placeholder="" class="form-control input-md" required="">
+                            <span class="help-block">Digite o número do seu telefone</span>  
+                        </div>
+                    </div>
+
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="Cidade">Escolha uma cidade:</label>
+                        <div class="col-md-4">
+                            <select id="Cidade" name="Cidade" class="form-control">
+                                <option value="1">Brasília</option>
+                                <option value="2">Taguatinga</option>
+                                <option value="">Ceilândia</option>
+                                <option value="">Recanto das Emas</option>
+                                <option value="">Gama</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Password input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="Senha">Senha:</label>
+                        <div class="col-md-4">
+                            <input id="Senha" name="Senha" type="password" placeholder="" class="form-control input-md" required="">
+                            <span class="help-block">Digite sua senha</span>
+                        </div>
+                    </div>
+
+                    <form class="form-horizontal">
+                        <fieldset>
+
+                            <form class="form-horizontal">
+                                <fieldset>
+
+                                    <!-- Form Name -->
+                                    <legend></legend>
+
+                                    <!-- Password input-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="Senha">Confirme sua senha:</label>
+                                        <div class="col-md-4">
+                                            <input id="Senha" name="Senha" type="password" placeholder="" class="form-control input-md" required="">
+                                            <span class="help-block">Confirme sua senha</span>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+
+                            <!-- Button (Double) -->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="Cadastrar"></label>
+                                <div class="col-md-8">
+                                    <button id="Cadastrar" name="Cadastrar" class="btn btn-success">Cadastrar</button>
+                                    <button id="Cancelar" name="Cancelar" class="btn btn-danger">Cancelar</button>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+
+
+                    </div>
+
+                    </body>
+                    </html>
+

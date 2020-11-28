@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Carros Velha Guarda</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!-- Brand -->
+                <a class="navbar-brand" href="Tela inicial.html">Carros Velha Guarda</a>
+
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pesquisa.html">Carros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Agendamento de manutenção.html">Agendamento de manutenção</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Acessar
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="acesso.html">Usuário</a>
+                            <a class="dropdown-item" href="Cadastro.html">Cadastrar</a>
+                            <a class="dropdown-item" href="esqueciminhasenha.html">Esqueci minha senha</a>
+                        </div>
+                        <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Relatórios
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="relatorioscarros.html">Carros</a>
+                            <a class="dropdown-item" href="relatoriovendas.html">vendas</a>
+                            <a class="dropdown-item" href="relatoriousuario.html">Usuários</a>
+                        </div>    
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </body>
+</html> 
+<!-- Form Name -->
+<legend>Pesquisar Carros</legend>
+
+<!-- Select Basic -->
+<div class="form-group">
+    <label class="col-md-4 control-label" for="Marca">Marca</label>
+    <div class="col-md-2">
+        <select id="Marca" name="Marca" class="form-control">
+            <option value="1">GM - Chevrolet</option>
+            <option value="2">Ford</option>
+            <option value="">Fiat</option>
+            <option value="">VW - Volkswagen</option>
+        </select>
+    </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+    <label class="col-md-4 control-label" for="Modelo">Modelo</label>
+    <div class="col-md-2">
+        <select id="Modelo" name="Modelo" class="form-control">
+            <option value="1">Camaro</option>
+            <option value="2">Caravan</option>
+            <option value="">Corvete</option>
+            <option value="">Opala</option>
+            <option value="">Lincoln</option>
+            <option value="">Maverick</option>
+            <option value="">Mondeo</option>
+            <option value="">Mustang</option>
+            <option value="">147</option>
+            <option value="">Panaroma</option>
+            <option value="">Brasilia</option>
+            <option value="">Fusca</option>
+            <option value="">Parati</option>
+        </select>
+    </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+    <label class="col-md-4 control-label" for="Ano">Ano</label>
+    <div class="col-md-2">
+        <select id="Ano" name="Ano" class="form-control">
+            <option value="1">1959</option>
+            <option value="2">1960</option>
+            <option value="">1961</option>
+            <option value="">1962</option>
+            <option value="">1963</option>
+            <option value="">1964</option>
+            <option value="">1965</option>
+            <option value="">1966</option>
+            <option value="">1967</option>
+            <option value="">1968</option>
+            <option value="">1969</option>
+            <option value="">1970</option>
+            <option value="">1971</option>
+            <option value="">1972</option>
+            <option value="">1973</option>
+            <option value="">1974</option>
+            <option value="">1975</option>
+            <option value="">1976</option>
+            <option value="">1977</option>
+            <option value="">1978</option>
+            <option value="">1979</option>
+            <option value="">1980</option>
+            <option value="">1981</option>
+            <option value="">1982</option>
+            <option value="">1983</option>
+            <option value="">1984</option>
+            <option value="">1985</option>
+            <option value="">1986</option>
+            <option value="">1978</option>
+            <option value="">1988</option>
+            <option value="">1989</option>
+            <option value="">1990</option>
+            <option value="">1991</option>
+        </select>
+    </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+    <label class="col-md-4 control-label" for="Pesquisar"></label>
+    <div class="col-md-4">
+        <button id="Pesquisar" name="Pesquisar" class="btn btn-primary">Pesquisar</button>
+    </div>
+</div>
+
+</fieldset>
+</form>
